@@ -118,5 +118,12 @@ class Damev
 
 		return $days;
 	}
+	
+	public static function now($format = null) {
+		if (!$format) {
+			return jdate("j F Y - H:i:s ");
+		}
+		return jdate($format);
+	}
 }
 ?>
